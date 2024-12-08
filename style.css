@@ -9,27 +9,37 @@
 html,
 body {
 	font-family: 'Roboto', sans-serif;
-	width: 100%;
 	height: 100%;
-	background-image: url('./hero_desktop.webp');
+	background-image: url('./assets/hero_desktop.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1350px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.container {
+	max-width: 1350px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .header {
 	margin-top: 0.5rem;
 	display: flex;
 	justify-content: space-between;
+	padding: 1rem;
 }
 
 .header .header-logo {
 	position: relative;
-	left: 40%;
+	left: 42%;
 	display: flex;
 	align-items: center;
 }
@@ -39,6 +49,43 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	font-size: 1.5rem;
-	font-weight: 500;
+	font-weight: 600;
 	margin-left: 0.5rem;
+}
+.header a {
+	text-decoration: none;
+}
+
+.header .btn {
+	border: none;
+	border-radius: 20px;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.header .sign-in-btn {
+	background-color: #eb1700;
+	color: #ffffff;
+}
+
+.header .sign-up-btn {
+	background-color: #ffffff;
+	color: #606060;
+}
+
+.main {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.main .title {
+	color: #ffffff;
+	font-size: 2.3rem;
 }
