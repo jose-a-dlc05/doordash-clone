@@ -3,6 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+		/>
 		<link rel="stylesheet" href="/style.css" />
 		<title>Doordash</title>
 	</head>
@@ -29,14 +37,26 @@
 				</section>
 			</header>
 			<main class="main">
-				<h1 class="title">Discover restaurants and more near you</h1>
-				<div class="input-wrapper">
-					<input type="text" placeholder="Enter delivery address" />
-				</div>
-				<div class="btn-wrapper">
+				<h1 class="title">Discover restaurants and more near you.</h1>
+				<section class="input-wrapper">
+					<div class="map-marker">
+						<i class="fi fi-rs-marker" aria-hidden="true"></i>
+					</div>
+					<div class="user-input">
+						<input type="text" placeholder="Enter delivery address" />
+					</div>
+					<div class="right-arrow">
+						<a href="#">
+							<i class="fi fi-rr-arrow-small-right" aria-hidden="true"></i>
+						</a>
+					</div>
+				</section>
+				<section class="btn-wrapper">
+					<i class="fi fi-rr-user" aria-hidden="true"></i>
 					<a class="find-food-btn" href="#">Sign in for saved address</a>
-				</div>
+				</section>
 			</main>
 		</section>
+		<script src="/index.js"></script>
 	</body>
 </html>

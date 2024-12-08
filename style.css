@@ -15,6 +15,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+a {
+	text-decoration: none;
+}
+
 .container {
 	max-width: 1350px;
 	margin: 0 auto;
@@ -52,9 +56,6 @@ body {
 	font-weight: 600;
 	margin-left: 0.5rem;
 }
-.header a {
-	text-decoration: none;
-}
 
 .header .btn {
 	border: none;
@@ -88,4 +89,83 @@ body {
 .main .title {
 	color: #ffffff;
 	font-size: 2.3rem;
+	letter-spacing: 0.187rem;
+}
+
+.main .input-wrapper {
+	margin-top: 1.5rem;
+	width: 31%;
+	background-color: #ffffff;
+	border-radius: 25px;
+	padding: 0.5rem 0.7rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.input-active {
+	outline: 2px #4969f5 solid;
+}
+
+.main .input-wrapper .map-marker .fi-rs-marker::before {
+	font-size: 1.3rem;
+	position: relative;
+	left: 5px;
+}
+
+.main .input-wrapper .user-input {
+	width: 80%;
+}
+
+.main .input-wrapper .user-input input {
+	border: none;
+	padding: 0.5rem;
+	width: 100%;
+}
+
+.main .input-wrapper .user-input input::placeholder {
+	font-size: 1rem;
+}
+
+.main .input-wrapper .user-input input:focus {
+	outline-width: 0;
+}
+
+.main .input-wrapper .right-arrow {
+	height: 35px;
+	width: 35px;
+	background-color: #fd442f;
+	padding: 0.2rem;
+	border-radius: 30px;
+}
+
+.main .input-wrapper .right-arrow a .fi-rr-arrow-small-right::before {
+	position: relative;
+	top: 0.187rem;
+	left: 0.218rem;
+	font-size: 23px;
+	color: #ffffff;
+}
+
+.main .btn-wrapper {
+	margin-top: 2rem;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 0.5rem;
+	border-radius: 25px;
+}
+
+.main .btn-wrapper .fi-rr-user {
+	position: relative;
+	top: 0.187rem;
+	font-size: 0.875rem;
+}
+
+.main .btn-wrapper .find-food-btn {
+	vertical-align: middle;
+	font-size: 0.875rem;
+}
+
+.main .btn-wrapper .find-food-btn:visited {
+	color: #000000;
 }
